@@ -23,5 +23,5 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore  ./src/FSH.Starter.slnx
     - name: Build
-      run: dotnet build   ./src/FSH.Starter.slnx --no-restore
+      run: dotnet build   ./src/FSH.Starter.slnx --no-restore   --configuration Release -o ./build_output
   
