@@ -22,6 +22,6 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore  ./src/FSH.Starter.slnx
-    - name: Build
-      run: dotnet build   ./src/FSH.Starter.slnx --no-restore   --configuration Release -o ./deploy
+    - name: Publish
+      run: dotnet publish   ./src/FSH.Starter.slnx --no-restore   --configuration Release -o ./deploy
   
